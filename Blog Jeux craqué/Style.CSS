@@ -1,0 +1,152 @@
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font moderne */
+}
+
+/* Body */
+body {
+    background-color: #f4f4f4; /* Fond clair */
+    color: #333; /* Texte sombre pour une meilleure lisibilité */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50; /* Fond bleu foncé */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* Main Content */
+main {
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Site List Section */
+.site-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grille flexible */
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Site Card */
+.site-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image */
+.site-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #2c3e50;
+}
+
+/* Site Title */
+.site-card h2 {
+    background-color: #3498db; /* Bleu clair */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Description */
+.site-card p {
+    padding: 20px;
+    font-size: 1rem;
+    color: #555;
+    text-align: justify;
+}
+
+/* Links */
+.site-card a {
+    display: block;
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.site-card a:hover {
+    background-color: #3498db;
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.star {
+    font-size: 1.5rem;
+    color: #f39c12;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+
+    .site-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .site-card p {
+        font-size: 0.95rem;
+    }
+}
